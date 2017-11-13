@@ -1,6 +1,5 @@
 package ca.ubc.cs.cpsc210.translink.providers;
 
-import ca.ubc.cs.cpsc210.translink.BusesAreUs;
 import ca.ubc.cs.cpsc210.translink.model.Stop;
 
 import java.io.IOException;
@@ -24,10 +23,9 @@ public class HttpArrivalDataProvider extends AbstractHttpDataProvider {
      * the stop specified in call to constructor.
      *
      * @returns URL to query Translink web service for arrival data
-     *
-     * TODO: Complete the implementation of this method (Task 8)
      */
     protected URL getURL() throws MalformedURLException {
+        // TODO: Complete the implementation of this method (Task 8)
         return null;
     }
 

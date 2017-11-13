@@ -1,5 +1,7 @@
 package ca.ubc.cs.cpsc210.translink.util;
 
+import org.osmdroid.util.GeoPoint;
+
 /**
  * Compute relationships between points, lines, and rectangles represented by LatLon objects
  */
@@ -57,6 +59,16 @@ public class Geometry {
         }
         boolean ans = !(selon < nwlon2 || selon2 < nwlon || nwlat < selat2 || nwlat2 < selat);
         return ans;
+    }
+
+    /**
+     * Convert LatLon to GeoPoint
+     *
+     * @param ll  the LatLon
+     * @return  GeoPoint at same location as the LatLon
+     */
+    public static GeoPoint gpFromLL(LatLon ll) {
+        return new GeoPoint(ll.getLatitude(), ll.getLongitude());
     }
 
     /**

@@ -100,12 +100,10 @@ public class BusesAreUs extends Activity implements LocationListener, StopSelect
      * Update nearest stop text view when user location changes
      *
      * @param nearest stop that is nearest to user (null if no stop within StopManager.RADIUS metres)
-     *
-     * TODO: Complete the implementation of this method (Task 6)
      */
     @Override
     public void onLocationChanged(Stop nearest, LatLon locn) {
-
+        // TODO: Complete the implementation of this method (Task 6)
     }
 
     @Override
@@ -142,12 +140,19 @@ public class BusesAreUs extends Activity implements LocationListener, StopSelect
      * Set selected stop in StopManager.
      *
      * @param stop stop selected by user
-     *
-     * TODO: Complete the implementation of this method (Task 7)
      */
     @Override
     public void onStopSelected(Stop stop) {
+        // TODO: Complete the implementation of this method (Task 7)
+    }
 
+    /**
+     * Return a scaling factor for resources that should stay "about the same size" on the screen
+     * @return      a factor to multiply fonts and widths of things to keep them visible on screen of varying resolution
+     */
+    public static float dpiFactor() {
+        float x = activity.getResources().getDisplayMetrics().density;
+        return x > 2.0f ? x / 2.0f : 1.0f;
     }
 
     /**

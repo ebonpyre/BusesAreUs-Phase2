@@ -33,10 +33,9 @@ public class ArrivalsListFragment extends ListFragment {
      * Get arrivals for selected stop
      *
      * @return   list of arrivals at selected stop
-     *
-     * TODO: Complete the implementation of this method (Task 9)
      */
     private ArrayList<Arrival> getArrivalsForSelectedStop() {
+        // TODO: Complete the implementation of this method (Task 9)
         return new ArrayList<>();
     }
 
