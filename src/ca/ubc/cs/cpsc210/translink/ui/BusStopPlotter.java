@@ -66,6 +66,7 @@ public class BusStopPlotter extends MapViewOverlay {
         Drawable clusterIconD = activity.getResources().getDrawable(R.drawable.stop_cluster);
         Bitmap clusterIcon = ((BitmapDrawable) clusterIconD).getBitmap();
         stopClusterer.setIcon(clusterIcon);
+
     }
 
     /**
